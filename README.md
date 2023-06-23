@@ -17,13 +17,13 @@ DEVs: Package developers
 
 Code QA reviewer: Code QA reviewer.
 
-    **Maintenance and Testing:**
+> **Maintenance and Testing:**
 1. DEVs are expected to frequently run CRAN checks on their package while the package doesn't have automated CRAN checks via github actions.
 1. The package includes automated tests using testthat.
 1. All packages on github repositories shall have github actions with at least one test and a CRAN check.
 1. Whoever pushes a commit that breaks any github action workflow is responsible for fixing them in a timely fashion (i.e., at most within a few days of your commit). Those will be shown next to your commits. This is expected to happen and will happen from time to time as R is updated.
 1. Minor updates in documentation are welcome from anyone in the project.
-    **Quality Assurance:**
+> **Quality Assurance:**
 1. No new release should decrease test coverage % as measured by codecov.io.
 1. No changes in the readme shall be made without proper oversight after the package is publicly released.
 1. Code QA comments shall be at the github pull request documentation.
