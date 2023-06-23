@@ -1,9 +1,9 @@
-# Pedro's R package and code repository housekeeping rules
+# R package and code repository housekeeping rules
 Housekeeping rules for R packages &amp; code repositories
 
-The heart of this document is to serve as an agreed-upon set of rules we follow to ensure the quality of our R packages and code repositories. They were created by Pedro for the packages he contributes to but may be used for other R packages or software. Their purpose of them is to ensure the quality of the code we release, compliance with RAND's QA and IP standards and make sure any R package I contribute to is well-maintained.
+The heart of this document is to serve as an agreed-upon set of rules we follow to ensure the quality of our R packages and code repositories. They were created by Pedro for the packages he contributes to but may be used for other R packages or software. Their purpose of them is to ensure the quality of the code we release, compliance with QA and IP standards and make sure any R package I contribute to is well-maintained.
 
-These rules are mostly targeted to the R environment and informed by Pedro's preferences – by no means do they represent absolute standards that you should always follow. That said, you will notice that most of them are followed by well-maintained packages in the R community. Rather than a set-in-stone set of rules, these rules can evolve over time, but they always need to ensure our compliance with current RAND policy.
+These rules are mostly targeted to the R environment and informed by Pedro's preferences – by no means do they represent absolute standards that you should always follow. That said, you will notice that most of them are followed by well-maintained packages in the R community. Rather than a set-in-stone set of rules, these rules can evolve over time.
 
 **Roles:**
 
@@ -17,17 +17,17 @@ DEVs: Package developers
 
 Code QA reviewer: Code QA reviewer.
 
-  **Maintenance and Testing:**
+    **Maintenance and Testing:**
 1. DEVs are expected to frequently run CRAN checks on their package while the package doesn't have automated CRAN checks via github actions.
 1. The package includes automated tests using testthat.
 1. All packages on github repositories shall have github actions with at least one test and a CRAN check.
 1. Whoever pushes a commit that breaks any github action workflow is responsible for fixing them in a timely fashion (i.e., at most within a few days of your commit). Those will be shown next to your commits. This is expected to happen and will happen from time to time as R is updated.
 1. Minor updates in documentation are welcome from anyone in the project.
-  **Quality Assurance:**
+    **Quality Assurance:**
 1. No new release should decrease test coverage % as measured by codecov.io.
-1. No changes in the readme shall be made without RAND OEA oversight after the package is publicly released.
+1. No changes in the readme shall be made without proper oversight after the package is publicly released.
 1. Code QA comments shall be at the github pull request documentation.
-  **Branching:**
+    **Branching:**
 1. The main branch is locked for commits. All changes shall be made to the develop or other development branches.
 1. We generally do not welcome pull requests from forks. This rule can change to the extent the package becomes a collaborative project. The implication is that you should clone the repository, not fork it.
 1. We subscribe to Driessen's [git branching model](https://nvie.com/posts/a-successful-git-branching-model/), except we do not use release branches. This means package developers should use the develop branch by default.
