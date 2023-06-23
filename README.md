@@ -17,8 +17,8 @@ DEVs: Package developers
 
 Code QA reviewer: Code QA reviewer.
 
-    **Maintenance and Testing**
-    
+   **Quality Assurance**
+
 1. DEVs are expected to frequently run CRAN checks on their package while the package doesn't have automated CRAN checks via github actions.
 1. The package includes automated tests using testthat.
 1. All packages on github repositories shall have github actions with at least one test and a CRAN check.
