@@ -17,16 +17,6 @@ DEVs: Package developers
 
 Code QA reviewer: Code QA reviewer.
 
-
-1.  First
-2.  Second
-3.  Third
-
-    A normal paragraph
-
-4.  Continue with item 4
-5.  Item 5
-
     **Maintenance and Testing**
     
 1. DEVs are expected to frequently run CRAN checks on their package while the package doesn't have automated CRAN checks via github actions.
@@ -40,11 +30,15 @@ Code QA reviewer: Code QA reviewer.
 1. No new release should decrease test coverage % as measured by codecov.io.
 1. No changes in the readme shall be made without proper oversight after the package is publicly released.
 1. Code QA comments shall be at the github pull request documentation.
+   
     **Branching:**
+   
 1. The main branch is locked for commits. All changes shall be made to the develop or other development branches.
 1. We generally do not welcome pull requests from forks. This rule can change to the extent the package becomes a collaborative project. The implication is that you should clone the repository, not fork it.
 1. We subscribe to Driessen's [git branching model](https://nvie.com/posts/a-successful-git-branching-model/), except we do not use release branches. This means package developers should use the develop branch by default.
-  **Versioning:**
+
+    **Versioning:**
+   
 1. We use [semantic versioning](https://semver.org/). Whoever adds features to the package is responsible for incrementing the version in the description file. Do not create new minor or major versions without consulting with the PI or PM.
 1. Any change in the code requires at least a new patch version.
 1. Package releases shall follow [Hadley's suggested workflow](https://r-pkgs.org/release.html).
@@ -58,7 +52,9 @@ Code QA reviewer: Code QA reviewer.
 1. Major releases require full code QA from an external developer.
 1. Minor and Major releases must be documented in the NEWS.md file.
 1. Github will be set up such that it creates release tags automatically.
-  **Intellectual property:**
+   
+    **Intellectual property:**
+  
 1. We will determine what is the appropriate license for a package before the first release, based on its dependencies.
 1. Avoid adding new dependencies to the package. If doing so, ensure that the license of their dependencies is less restrictive than the license chosen.
 
