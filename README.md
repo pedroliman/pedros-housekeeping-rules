@@ -17,6 +17,16 @@ DEVs: Package developers
 
 Code QA reviewer: Code QA reviewer.
 
+
+1.  First
+2.  Second
+3.  Third
+
+    A normal paragraph
+
+4.  Continue with item 4
+5.  Item 5
+
 > **Maintenance and Testing:**
 1. DEVs are expected to frequently run CRAN checks on their package while the package doesn't have automated CRAN checks via github actions.
 1. The package includes automated tests using testthat.
