@@ -1,21 +1,28 @@
-# R package and code repository housekeeping rules
+# Code housekeeping checklist
 Housekeeping rules for R packages &amp; code repositories
 
-The heart of this document is to serve as an agreed-upon set of rules we follow to ensure the quality of our R packages and code repositories. They were created by Pedro for the packages he contributes to but may be used for other R packages or software. Their purpose of them is to ensure the quality of the code we release, compliance with QA and IP standards and make sure any R package I contribute to is well-maintained.
+The heart of this document is to serve as an agreed-upon set of rules we follow to ensure the quality of our R packages and code repositories. Their purpose of them is to ensure the quality of the code we release, compliance with QA and IP standards and make sure any R package I contribute to is well-maintained.
 
-These rules are mostly targeted to the R environment and informed by Pedro's preferences – by no means do they represent absolute standards that you should always follow. That said, you will notice that most of them are followed by well-maintained packages in the R community. Rather than a set-in-stone set of rules, these rules can evolve over time.
+These rules are not absolute standards that you should always follow. That said, you will notice that most of them are followed by well-maintained packages in the R community. Rather than a set-in-stone set of rules, these rules can evolve over time.
 
 **Roles:**
 
 In any software development endeavor, we will identify people for the following roles:
 
 PI: Principal investigator
-
 PM: Package Maintainer
-
 DEVs: Package developers
-
 Code QA reviewer: Code QA reviewer.
+
+# Code Repositories for papers or reports.
+
+1. One paper/report will correspond to one code repository that replicates the results for that paper.
+1. Always use Rstudio projects.
+1. Do not use `here` to locate your files.
+1. Do not push binary files to the repository.
+1. Only break this rule for reproducibility purposes, and only at the end of 
+
+# R Packages:
 
    **Quality Assurance**
 
